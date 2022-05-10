@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "strict": true,
+      "sourceMap": true,
+      "target": "ES5",
+      "module": "esnext",
+      // JSXの書式を有効に設定
+      "jsx": "react",
+      "moduleResolution": "node",
+      "downlevelIteration": true,
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "allowSyntheticDefaultImports": true
+    }
+  }
+
+   //dom.iterableと"downlevelIterationでdom要素をiterableとして扱える。
