@@ -1,4 +1,5 @@
 import React,{FC} from 'react'
+import Styles from './styles/css/sub.module.css'
 
 type Props = {
     msg:string
@@ -7,6 +8,9 @@ type Props = {
 export const Sub:FC<Props> = (props) => {
     const {msg} = props
     return (
-        <h2>{msg}!!!</h2>
+        <div className={Styles.root}>
+            <h2  className={Styles.msg}>{msg}!!!</h2>
+        </div>
+        
     )
 }

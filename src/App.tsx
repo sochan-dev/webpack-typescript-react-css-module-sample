@@ -1,11 +1,13 @@
 import React,{FC} from 'react'
 import {Sub} from './Sub'
+import Styles from './styles/css/app.module.css'
+
 
 export const App:FC = () => {
     return (
-        <>
-        <h1>webpack × typescript × react</h1>
+        <div className={Styles.root}>
+        <h1 className={Styles.msg}>webpack × typescript × react</h1>
         <Sub msg={'gorgeous'}/>
-        </>
+        </div>
     )
 }

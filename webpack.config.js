@@ -8,6 +8,18 @@ module.exports = {
           // 拡張子 .ts もしくは .tsx の場合
           test: /\.tsx?$/,
           use: "ts-loader"
+        },
+        {
+          test:/\.css/,
+          use:[
+            {
+              loader:"style-loader"
+            },
+            {
+              loader:"css-loader",
+              options:{url:false}
+            }
+          ]
         }
       ]
     },
